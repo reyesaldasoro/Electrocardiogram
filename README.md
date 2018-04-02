@@ -75,13 +75,14 @@ grid <span class="string">on</span>
 axis ([15 20 1500 2800])
 </pre>
 
-![D_ElectroCardioGram_01](Figures/D_ElectroCardioGram_04.png)
+![D_ElectroCardioGram_04](Figures/D_ElectroCardioGram_04.png)
 
 <p>Notice that since we are now using time, the axis instruction has changed. If we look closely we can spot a problem:</p>
 <pre class="codeinput">axis ([16.4 17.2 2000 2800])
 </pre>
 
-<img vspace="5" hspace="5" src="D_ElectroCardioGram_05.png" alt=""> 
+![D_ElectroCardioGram_05](Figures/D_ElectroCardioGram_05.png)
+
 
 <p>The threshold is providing with a value for every single place where the signal exceed the given value, which is not exactly the same as detecting a peak. Fortunately Matlab has a function (always check to see if Matlab has a function for what you want, among thousands of pre-programmed functions, it is very likely that Matlab will simplify your work) to detect peaks called 'findpeaks', which is used like this:</p>
 <pre class="codeinput">[peaks_2,pos_peaks] = findpeaks(ecg);
