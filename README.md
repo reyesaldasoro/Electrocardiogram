@@ -14,7 +14,7 @@
 
 ![D_ElectroCardioGram_01](Figures/D_ElectroCardioGram_01.png)
 
-<p>This data signal has been taken from the website of Professor Rangaraj M. Rangayyan (<a href="http://people.ucalgary.ca/~ranga/">http://people.ucalgary.ca/~ranga/</a>). If you follow the section "Lecture notes, lab exercises, and signal data files" you will find a large number of signals from different acquisition modalities (ECG, EEG, EMF, etc.). You can save the files from a browser to your hard drive and then open with the command load as above. You can also read the data sets directly from Matlab. The following lines will show you how to do this.</p>
+<p>This data signal has been read from the website of Professor Rangaraj M. Rangayyan (<a href="http://people.ucalgary.ca/~ranga/">http://people.ucalgary.ca/~ranga/</a>). If you follow the section "Lecture notes, lab exercises, and signal data files" you will find a large number of signals from different acquisition modalities (ECG, EEG, EMF, etc.). You can save the files from a browser to your hard drive and then open with the command load as above. You can also read the data sets directly from Matlab. The following lines will show you how to do this.</p>
 
 <p>First, you need to know the whole address where the file is located, then you use the command 'urlread'.</p>
 <pre class="codeinput">file = <span class="string">'http://people.ucalgary.ca/~ranga/enel563/SIGNAL_DATA_FILES/ecgpvc.dat'</span>;
